@@ -3,8 +3,9 @@
 const triggers = document.querySelectorAll('a');
 
 function highlightLink() {
+    const linkCoords = this.getBoundingClientRect();
+    console.log(linkCoords);
 
-    console.log(this);
 }
 
 triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
